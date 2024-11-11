@@ -10,12 +10,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
-    <title>My weather application</title>
+    <title>My Weather Application</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form id="search-form">
+        <form id="search-form" onsubmit="return false;">
           <input
             type="search"
             placeholder="Enter a city.."
@@ -26,6 +26,15 @@
           <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
+      <main>
+        <div id="weather-results"></div>
+      </main>
+      <footer>
+        <p>© 2023 My Weather Application</p>
+      </footer>
+    </div>
+  </body>
+</html>
       <main>
         <div class="current-weather">
           <div>

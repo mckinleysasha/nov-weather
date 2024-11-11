@@ -1,10 +1,11 @@
 body {
   background: #fefef7;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif; 
 }
 
 a {
   color: #f16e5d;
+  text-decoration: none; 
 }
 
 .weather-app {
@@ -22,9 +23,9 @@ header {
 }
 
 .search-input {
-  background-color: #aba7b6c4;
+  background-color: rgba(171, 167, 182, 0.77); 
   border: none;
-  color: rgba(39, 33, 66, 0.4);
+  color: rgba(39, 33, 66, 0.6); 
   font-size: 16px;
   padding: 20px;
   width: 75%;
@@ -37,8 +38,8 @@ header {
   background-color: #f1a05d;
   color: white;
   border: none;
-  padding: 20px;
-  line-height: 1;
+  padding: 20px 25px; 
+  cursor: pointer; 
   border-radius: 5px;
 }
 
@@ -47,52 +48,60 @@ main {
 }
 
 .current-temperature {
-  font-size: 48px;
+    font-size: 48px;
 }
 
 .current-weather {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .current-city {
-  font-size: 38px;
-  font-weight: 900;
-  margin: 0;
+    font-size: 38px;
+    font-weight: 900;
+    margin: 0;
 }
+
 .current-details {
-  color: rgba(39, 33, 66, 0.4);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+    color: rgba(39, 33, 66, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .current-details strong {
-  color: #f65282;
+    color: #f65282;
 }
 
 .current-temperature-icon {
-  position: relative;
-  top: -8px;
-  font-size: 40px;
-  margin-right: 10px;
+    position: relative;
+    top: -8px;
+    font-size: 40px;
+    margin-right: 10px;
 }
 
 .current-temperature-value {
-  font-size: 80px;
-  font-weight: bold;
+    font-size: 80px;
+    font-weight: bold;
 }
 
 .current-temperature-unit {
-  font-size: 28px;
-  position: relative;
-  top: -38px;
+    font-size: 28px;
+    position: relative;
+    top: -38px;
 }
 
 footer {
-  border-top: 1px solid #f9f7fe;
-  text-align: center;
-  padding-top: 15px;
-
-  color: rgba(48, 26, 146, 0.4);
+    border-top: 1px solid #f9f7fe;
+    text-align: center;
+    padding-top: 15px;
+    color: rgba(48, 26, 146, 0.4);
 }
+
+.current-city:hover {
+    text-decoration: underline; 
+}
+
+.current-details:hover {
+    color: rgba(39, 33, 66, 0.7); 
